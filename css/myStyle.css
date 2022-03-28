@@ -1,0 +1,96 @@
+section 
+{
+   display: flex;
+   height: 300px;
+   position: relative;
+}
+
+.nav-link
+{
+    color: white;
+
+}
+
+.ofert
+{
+width:  50%;
+height: 60px;
+background-color: rgb(127, 127, 150);
+position: absolute;
+z-index: 1;
+left: -50px;
+top: -70px;
+border-radius: 10px 100px / 120px;
+color: white;
+margin: 50px;
+}
+
+.hero
+ {
+    display: block;
+    box-sizing: border-box;
+    height: 400px;
+    width: 100%;
+    background-color: #dc3d4b;
+    clip-path: ellipse(135% 100% at 99.3% 0%);
+    position: absolute;
+    z-index: -1;
+
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+    .img-fluid {
+      width: 60%;
+    display: flex;
+    animation: slide-top 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate-reverse both;
+
+
+    }
+    .subtitle
+    {
+      color: black;
+    }
+    .title
+    {
+      color: white;
+    }
+
+  }
+  @media only screen and (max-width: 601px) {
+    .img-fluid {
+      width: 90%;
+
+    }
+    .hero
+    {
+        height: 500px;
+    }
+    .title {
+        font-size: x-large ;
+        color: black;
+    }
+
+    .subtitle
+    {
+       color: black;
+    }
+  }
+
+.newspaper1 
+{
+    columns: 100px 3;
+}
+      
+ .newspaper2 
+{
+    columns: 50px 4;
+}
